@@ -17,7 +17,12 @@ Ubuntu 13.04 was used for the following example.
 
 - Install some required libs
 ```bash
-sudo apt-get install aptitude git libxml2-dev libssl-dev libbz2-dev libcurl4-gnutls-dev libpng-dev
+sudo apt-get install aptitude git \
+  libxml2-dev \
+  libssl-dev \
+  libbz2-dev \
+  libcurl4-gnutls-dev \
+  libpng-dev
 ```
 
 - Download PHP from http://php.net/downloads.php

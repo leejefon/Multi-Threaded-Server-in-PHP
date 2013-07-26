@@ -6,8 +6,6 @@
  * Author: Jeff Lee
  */
 
-
-//App::import('Packet', 'Core');
 require "Packet.php";
 
 class Server extends Thread {

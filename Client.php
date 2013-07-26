@@ -16,11 +16,6 @@ class Client {
 
 	private $port;
 
-	private $mapper;
-
-	private $reducer;
-
-
 	public function __construct($host = '127.0.0.1', $port = '8000') {
 		$this->host = $host;
 		$this->port = $port;
