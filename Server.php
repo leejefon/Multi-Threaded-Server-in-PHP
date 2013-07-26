@@ -28,7 +28,7 @@ class Server extends Thread {
 			exit;
 		}
 
-		// too bad global spawns doesn't work..
+		// not sure why spawns as class member doesn't work..
 		$spawns = array();
 		$write = array();
 		$exception = array();
@@ -63,13 +63,13 @@ class Server extends Thread {
 		return $socket;
 	}
 
-	public function onAccept($spawns) {
+	public function onAccept(&$spawns) {
 		$conn = stream_socket_accept($this->socket);
 		fwrite($conn, "Hello World\n");
 		$spawns[] = $conn;
 	}
 
-	public function onClientPacket($s, $spawns) {
+	public function onClientPacket($s, &$spawns) {
 		$result = Packet::cast(fread($s, 10240));
 
 		if (empty($result)) { // Connection closed

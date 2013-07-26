@@ -27,16 +27,7 @@ class Client {
 		$data = new Packet("
 			abcdefghijklmnopqrstuvwxyz\n
 			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
-			abcdefghijklmnopqrstuvwxyz\n
+			abcdefghijklmnopqrstuvwxyz
 		");
 
 		fwrite($this->socket, serialize($data));
