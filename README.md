@@ -73,6 +73,7 @@ rm configure
 - Compile and test
 ```bash
 make
+sudo make install
 make test
 ```
 
